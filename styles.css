@@ -1,0 +1,87 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    animation: shake 0.5s ease-in-out; 
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #F6D6D6;
+    color: #A1EEBD;
+    text-shadow: 2px 2px 4px black;
+    border-bottom: 8px solid #7BD3EA;
+    border-radius: 25px;
+
+    animation: fade-in 1s ease-in; 
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.border-yellow {
+    border: 2px dotted #F6F7C4;
+    padding: 5px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s) - done
+- add border radius - done
+- shuffle the layout - done
+- shadows        🤯 - done
+- hover effects  🤯🤯 - done
+- animations     🤯🤯🤯 -done but need more practise 
+*/
+
+/*
+My color pattle
+#F6D6D6
+#F6F7C4
+#A1EEBD
+#7BD3EA
+*/
